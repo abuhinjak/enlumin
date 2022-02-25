@@ -20,13 +20,18 @@
     <div class="navbar">
       <div class="container flex">
         <h1 class="logo">Enlumin</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
+        <nav class="nav-links-wrapper">
+          <ul class="nav-links">
+            <li><a class="active-link" href="index.html">Home</a></li>
             <li><a href="features.html">Features</a></li>
             <li><a href="docs.html">Docs</a></li>
           </ul>
         </nav>
+        <div class="mobile-menu-toggle">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </div>
     </div>
 
@@ -131,7 +136,7 @@
     </section>
 
     <!-- Cloud -->
-    <section class="cloud bg-primary my-2 py-2">
+    <section class="cloud bg-primary my-2 py-5">
       <div class="container grid">
         <div class="text-center">
           <h2 class="lg">Extreme Cloud Hosting</h2>
@@ -181,18 +186,10 @@
 
     <!-- Footer -->
     <footer class="footer bg-dark py-5">
-      <div class="container grid grid-3">
+      <div class="container">
         <div>
-          <h1>Enlumin</h1>
-          <p>Copyright &copy; 2022</p>
+          <p>Enlumin | Copyright &copy; 2022</p>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="docs.html">Docs</a></li>
-          </ul>
-        </nav>
         <div class="social">
           <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
           <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
@@ -201,5 +198,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

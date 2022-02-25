@@ -17,7 +17,7 @@
     <!-- Navbar -->
     <div class="navbar">
       <div class="container flex">
-        <h1 class="logo">Loruki.</h1>
+        <h1 class="logo">Enlumin</h1>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -42,40 +42,59 @@
     <!-- Docs Main -->
     <section class="docs-main my-4">
       <div class="container grid">
-        <div class="card bg-light p-3">
+        <div class="card-list bg-light p-3">
           <h3 class="my-2">Essentials</h3>
           <nav>
             <ul>
-              <li><a class="text-primary" href="#">Introduction</a></li>
-              <li><a href="#">About Enlumin</a></li>
-              <li><a href="#">Installation</a></li>
+              <li><a class="tab-item text-primary" href="#"data-id="intro">Introduction</a></li>
+              <li><a class="tab-item" href="#"data-id="about">About Enlumin</a></li>
+              <li><a class="tab-item" href="#"data-id="install">Installation</a></li>
             </ul>
           </nav>
           <h3 class="my-2">Deployment</h3>
           <nav>
             <ul>
-              <li><a href="#">Setting up a container</a></li>
-              <li><a href="#">Using the CLI</a></li>
-              <li><a href="#">Managing resources</a></li>
-              <li><a href="#">Upgrade & downgrade</a></li>
+              <li><a class="tab-item" href="#"data-id="container">Setting up a container</a></li>
+              <li><a class="tab-item" href="#"data-id="cli">Using the CLI</a></li>
+              <li><a class="tab-item" href="#"data-id="resources">Managing resources</a></li>
+              <li><a class="tab-item" href="#"data-id="upgrade">Upgrade & downgrade</a></li>
             </ul>
           </nav>
         </div>
-        <div class="card">
+        <div class="card active" id="intro">
           <h2>Introduction</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            illo facere perferendis laborum? Similique recusandae incidunt eos
-            dolorum aliquam ipsam unde perspiciatis laudantium totam quam
-            laborum velit, at maxime minus?
+            11111111111111111111
           </p>
 
           <div class="alert alert-success">
             <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Quae, animi?
           </div>
+        </div>
+        <div class="card" id="about">
+          <h2>Introduction</h2>
+          <p>
+           2222222222222222222
+          </p>
 
-          <h3>Lorem, ipsum dolor.</h3>
+          <div class="alert alert-success">
+            <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quae, animi?
+          </div>
+        </div>
+        <div class="card" id="install">
+          <h2>Introduction</h2>
+          <p>
+            333333333333333333333333
+          </p>
+
+          <div class="alert alert-success">
+            <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quae, animi?
+          </div>
+        </div>
+          <!-- <h3>Lorem, ipsum dolor.</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
             totam magni eius vitae velit id, atque veritatis! At, vero porro.
@@ -94,7 +113,7 @@
           <p>NPM</p>
           <pre><code>$ npm install enlumin-cli</code></pre>
           <p>Yarn</p>
-          <pre><code>$ yarn install enlumin-cli</code></pre>
+          <pre><code>$ yarn install enlumin-cli</code></pre> -->
         </div>
       </div>
     </section>
@@ -103,7 +122,7 @@
     <footer class="footer bg-dark py-5">
       <div class="container grid grid-3">
         <div>
-          <h1>Loruki</h1>
+          <h1>Enlumin</h1>
           <p>Copyright &copy; 2020</p>
         </div>
         <nav>
@@ -121,5 +140,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
