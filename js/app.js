@@ -10,37 +10,10 @@ const navSlide = () => {
     // Hamburger Animation
     mobileMenu.classList.toggle("is-active");
     navWrapper.classList.toggle("mobile-active");
-    // Animate Links
-  // navLinks.forEach((link, index) => {
-  //   if(link.style.animation) {
-  //     link.style.animation = "";
-  //   } else {
-  //     link.style.animation = `navLinkFade .7s ease forwards ${index / 7 + 1.4}s`;
-  //   }
-  // });
   });
-
-  // Close menu when clicking outside
-
- document.addEventListener('click', function(event) {
-  if (event.target !== headerNav && !headerNav.contains(event.target)) {
-      // hide the menu
-    nav.classList.remove("mobile-active");
-    mobileMenu.classList.remove("toggle");
-  }
-
-  document.onclick = function(e) {
-    if(e.target !== mobileMenu && e.target !== navLinks) 
-  {
-    mobileMenu.classList.remove('toggle');
-    nav.classList.remove('mobile-active')
-  } 
-  }
-});
 }
 navSlide();
 // End Mobile Menu
-
 // Docs Menu
 const docs = document.querySelector('.docs-main');
 const tabs = document.querySelectorAll('.tab-item');
@@ -65,6 +38,7 @@ docs.addEventListener('click', function(e) {
     }
 });
 // End Docs Menu
+
 
 // Sticky Navbar
 window.addEventListener('scroll', function() {

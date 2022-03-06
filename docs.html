@@ -17,14 +17,19 @@
     <!-- Navbar -->
     <div class="navbar">
       <div class="container flex">
-        <h1 class="logo">Enlumin</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
+        <h1 class="logo"><a href="index.html">Enlumin</a></h1>
+        <nav class="nav-links-wrapper">
+          <ul class="nav-links">
+            <li><a class="active-link" href="index.html">Home</a></li>
             <li><a href="features.html">Features</a></li>
             <li><a href="docs.html">Docs</a></li>
           </ul>
         </nav>
+        <div class="mobile-menu-toggle">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </div>
     </div>
 
@@ -46,58 +51,78 @@
           <h3 class="my-2">Essentials</h3>
           <nav>
             <ul>
-              <li><a class="tab-item text-primary" href="#"data-id="intro">Introduction</a></li>
-              <li><a class="tab-item" href="#"data-id="about">About Enlumin</a></li>
-              <li><a class="tab-item" href="#"data-id="install">Installation</a></li>
+              <li>
+                <a class="tab-item text-primary" href="#" data-id="intro"
+                  >Introduction</a
+                >
+              </li>
+              <li>
+                <a class="tab-item" href="#" data-id="about">About Enlumin</a>
+              </li>
+              <li>
+                <a class="tab-item" href="#" data-id="install">Installation</a>
+              </li>
             </ul>
           </nav>
           <h3 class="my-2">Deployment</h3>
           <nav>
             <ul>
-              <li><a class="tab-item" href="#"data-id="container">Setting up a container</a></li>
-              <li><a class="tab-item" href="#"data-id="cli">Using the CLI</a></li>
-              <li><a class="tab-item" href="#"data-id="resources">Managing resources</a></li>
-              <li><a class="tab-item" href="#"data-id="upgrade">Upgrade & downgrade</a></li>
+              <li>
+                <a class="tab-item" href="#" data-id="container"
+                  >Setting up a container</a
+                >
+              </li>
+              <li>
+                <a class="tab-item" href="#" data-id="cli">Using the CLI</a>
+              </li>
+              <li>
+                <a class="tab-item" href="#" data-id="resources"
+                  >Managing resources</a
+                >
+              </li>
+              <li>
+                <a class="tab-item" href="#" data-id="upgrade"
+                  >Upgrade & downgrade</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
         <div class="card active" id="intro">
           <h2>Introduction</h2>
           <p>
-            11111111111111111111
+            A wonderful serenity has taken possession of my entire soul, like
+            these sweet mornings of spring which I enjoy with my whole heart. I
+            am alone, and feel the charm of existence in this spot, which was
+            created for the bliss of souls like mine. I am so happy, my dear
+            friend, so absorbed in the exquisite sense of mere tranquil
+            existence, that I neglect my talents.
           </p>
 
           <div class="alert alert-success">
-            <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quae, animi?
+            <i class="fas fa-info"></i> The quick, brown fox jumps over a lazy
+            dog.
           </div>
         </div>
         <div class="card" id="about">
-          <h2>Introduction</h2>
+          <h2>About</h2>
           <p>
-           2222222222222222222
+            One morning, when Gregor Samsa woke from troubled dreams, he found
+            himself transformed in his bed into a horrible vermin. He lay on his
+            armour-like back, and if he lifted his head a little he could see
+            his brown belly, slightly domed and divided by arches into stiff
+            sections. The bedding was hardly able to cover it and seemed ready
+            to slide off any moment. His many legs, pitifully thin compared with
+            the size of the rest of him, waved about helplessly as he looked.
+            "What's happened to me?" he thought. It wasn't a dream.
           </p>
-
-          <div class="alert alert-success">
-            <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quae, animi?
-          </div>
         </div>
         <div class="card" id="install">
-          <h2>Introduction</h2>
+          <h2>Installation</h2>
           <p>
-            333333333333333333333333
-          </p>
-
-          <div class="alert alert-success">
-            <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quae, animi?
-          </div>
-        </div>
-          <!-- <h3>Lorem, ipsum dolor.</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
-            totam magni eius vitae velit id, atque veritatis! At, vero porro.
+            He lay on his armour-like back, and if he lifted his head a little
+            he could see his brown belly, slightly domed and divided by arches
+            into stiff sections.
           </p>
           <a href="#" class="btn btn-primary">Install CLI</a>
 
@@ -113,30 +138,77 @@
           <p>NPM</p>
           <pre><code>$ npm install enlumin-cli</code></pre>
           <p>Yarn</p>
-          <pre><code>$ yarn install enlumin-cli</code></pre> -->
+          <pre><code>$ yarn install enlumin-cli</code></pre>
+        </div>
+        <div class="card" id="container">
+          <h2>How to set up a container</h2>
+          <p>
+            One morning, when Gregor Samsa woke from troubled dreams, he found
+            himself transformed in his bed into a horrible vermin. He lay on his
+            armour-like back, and if he lifted his head a little he could see
+            his brown belly, slightly domed and divided by arches into stiff
+            sections. The bedding was hardly able to cover it and seemed ready
+            to slide off any moment. His many legs, pitifully thin compared with
+            the size of the rest of him, waved about helplessly as he looked.
+            "What's happened to me?" he thought. It wasn't a dream.
+          </p>
+        </div>
+        <div class="card" id="cli">
+          <h2>CLI</h2>
+          <p>
+            The European languages are members of the same family. Their
+            separate existence is a myth. For science, music, sport, etc, Europe
+            uses the same vocabulary. The languages only differ in their
+            grammar, their pronunciation and their most common words. Everyone
+            realizes why a new common language would be desirable: one could
+            refuse to pay expensive translators. To achieve this, it would be
+            necessary to have uniform grammar, pronunciation and more common
+            words.
+          </p>
+        </div>
+        <div class="card" id="resources">
+          <h2>Managing</h2>
+          <p>
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness. No one
+            rejects, dislikes, or avoids pleasure itself, because it is
+            pleasure, but because those who do not know how to pursue pleasure
+            rationally encounter consequences that are extremely painful. Nor
+            again is there anyone who loves or pursues or desires to obtain pain
+            of itself, because it is pain, but because occasionally
+            circumstances occur in which toil and pain can procure him some
+            great pleasure.
+          </p>
+        </div>
+        <div class="card" id="upgrade">
+          <h2>Upgrade & downgrade</h2>
+          <p>
+            One morning, when Gregor Samsa woke from troubled dreams, he found
+            himself transformed in his bed into a horrible vermin. He lay on his
+            armour-like back, and if he lifted his head a little he could see
+            his brown belly, slightly domed and divided by arches into stiff
+            sections. The bedding was hardly able to cover it and seemed ready
+            to slide off any moment. His many legs, pitifully thin compared with
+            the size of the rest of him, waved about helplessly as he looked.
+            "What's happened to me?" he thought. It wasn't a dream.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer bg-dark py-5">
-      <div class="container grid grid-3">
+      <div class="container">
         <div>
-          <h1>Enlumin</h1>
-          <p>Copyright &copy; 2020</p>
+          <p>Enlumin | Copyright &copy; 2022</p>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="docs.html">Docs</a></li>
-          </ul>
-        </nav>
         <div class="social">
-          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
           <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
           <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
         </div>
       </div>
     </footer>
